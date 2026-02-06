@@ -40,10 +40,12 @@ const Footer = () => {
             Dedicated to providing advanced surgical care and compassionate treatment.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-red-600 transition-colors">
+            <a href="https://www.facebook.com/people/Parvinder-Singh/61587297596113/?rdid=OC7tLs9vJeCXIsdP&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AzuVv6uo2%2F"
+            className="p-2 bg-slate-800 rounded-full hover:bg-red-600 transition-colors">
               <Facebook size={18} />
             </a>
-            <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-red-600 transition-colors">
+            <a href="https://www.instagram.com/dr.parvindersinghortho?utm_source=qr&igsh=MWFyejhzMXl6cGd5NA%3D%3D"
+            className="p-2 bg-slate-800 rounded-full hover:bg-red-600 transition-colors">
               <Instagram size={18} />
             </a>
             <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-red-600 transition-colors">

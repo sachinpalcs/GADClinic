@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Parvindar_photo from '../assets/Parvindar_photo.png';
+import Maam_photo from '../assets/Maam_photo.png';
 import { Phone, Mail, MapPin, Award } from 'lucide-react';
-import logo from '../assets/logo.jpeg';
+// import logo from '../assets/logo.jpeg';
 
 
 
@@ -76,7 +77,7 @@ export const Slides = [
         <div className="max-w-7xl mx-auto px-6 w-full py-20 grid lg:grid-cols-12 gap-12 items-center z-10">
           <div className="lg:col-span-5 flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="w-64 h-64 md:w-80 md:h-80 xl:w-112.5 xl:h-112.5 rounded-full border-8 md:border-16 border-white shadow-2xl overflow-hidden relative group">
-              <img src={Parvindar_photo} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Dr. Simrandeep Kaur" />
+              <img src={Maam_photo} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Dr. Simrandeep Kaur" />
             </div>
           </div>
 
