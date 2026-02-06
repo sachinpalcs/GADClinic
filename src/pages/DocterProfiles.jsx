@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Award, BookOpen, Briefcase } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Parvindar_photo from '../assets/Parvindar_photo.png';
 
 const DoctorProfile = () => {
@@ -11,7 +12,7 @@ const DoctorProfile = () => {
     phone: "+91 98711 89004",
     location: "Janak Puri, New Delhi",
     specialties: ["Knee Replacement", "Hip Replacement", "Complex Trauma", "Joint Pain Management"],
-    experience: "15+ Years",
+    experience: "20+ Years",
     summary: "Dr. Parvinder Singh Arora is a highly accomplished Orthopaedic Surgeon with over 15 years of experience. He has a specialized interest in Arthroplasty (Joint Replacement) and Arthroscopy, having performed over 200 successful joint replacements and hundreds of trauma cases.",
     background: [
       "Former Clinical Fellow in Joint Replacement at Sant Parmanand Hospital.",
@@ -36,10 +37,6 @@ const DoctorProfile = () => {
       <section className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-10 items-center">
           <img src={Parvindar_photo} alt="Dr. Parvinder Singh Arora" className="w-64 h-80 rounded-lg shadow-inner object-cover border" />
-          {/* Profile Image Placeholder */}
-          {/* <div className="w-64 h-80 bg-slate-200 rounded-lg shadow-inner flex items-center justify-center overflow-hidden border">
-             <span className="text-slate-400 font-bold">Photo</span>
-          </div> */}
 
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl font-extrabold text-blue-900">{doctorData.name}</h1>
@@ -65,9 +62,12 @@ const DoctorProfile = () => {
               </div>
             </div>
 
-            <button className="mt-8 bg-blue-600 text-white px-8 py-3 rounded-md font-bold hover:bg-blue-700 transition shadow-lg">
-              BOOK AN APPOINTMENT
-            </button>
+
+            <Link to ="/book-appointment">
+              <button className="mt-8 bg-blue-600 text-white px-8 py-3 rounded-md font-bold hover:bg-blue-700 transition shadow-lg cursor-pointer active:scale-95">
+                BOOK AN APPOINTMENT
+              </button>
+            </Link>
           </div>
         </div>
       </section>

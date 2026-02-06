@@ -10,9 +10,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const treatments = [
-    { name: "Knee Replacement", path: "/treatments/knee" },
-    { name: "Hip Replacement", path: "/treatments/hip" },
-    { name: "Gynaecology", path: "/treatments/gynae" },
+    { name: "Knee Replacement", path: "/treatments/knee-replacement" },
+    { name: "Join Pain", path: "/treatments/joint-pain" },
+    { name: "Fracture", path: "/treatments/fracture" },
     { name: "Infertility Treatment", path: "/treatments/infertility" },
     { name: "Complex Trauma", path: "/treatments/trauma" },
   ];
@@ -108,12 +108,31 @@ const Footer = () => {
       <div className="border-t border-slate-800 bg-slate-950">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
           <p>© {currentYear} GAD Advanced Clinics. All Rights Reserved.</p>
+          {/* Add developed by Alomonox  */}
+          <div className="flex items-center gap-1 bg-slate-900/50 px-3 py-1 rounded-full border border-slate-800">
+            <span>🚀</span>
+            <span className="ml-1">Developed by</span>
+            <a 
+              href="https://alomonx.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 hover:text-blue-300 font-bold transition-colors ml-1"
+            >
+              Alomonx
+            </a>
+          </div>
+
+
           <div className="flex gap-6">
             <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white">Terms of Service</Link>
           </div>
         </div>
       </div>
+
+      
+
+
     </footer>
   );
 };

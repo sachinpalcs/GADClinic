@@ -32,6 +32,8 @@ const Navbar = () => {
         { name: 'Knee Replacement', path: '/treatments/knee-replacement' },
         { name: 'Fracture', path: '/treatments/fracture' },
         { name: 'Joint Pain', path: '/treatments/joint-pain' },
+        { name: 'Infertility Treatment', path: '/treatments/infertility' },
+        { name: 'Complex Trauma', path: '/treatments/trauma' },
       ]
     },
     { name: 'Contact Us', path: '/contact' },
