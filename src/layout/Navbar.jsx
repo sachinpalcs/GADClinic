@@ -40,7 +40,7 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <header className={`w-full bg-white fixed top-0 z-50 shadow-sm transition-transform duration-300 ${
+    <header className={`w-full bg-white fixed top-0 z-100 shadow-sm transition-transform duration-300 ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}>
       {/* Upper Section: Logo, Name, and Contact Info */}

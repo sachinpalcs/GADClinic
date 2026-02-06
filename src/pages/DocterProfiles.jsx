@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Award, BookOpen, Briefcase } from 'lucide-react';
+import Parvindar_photo from '../assets/Parvindar_photo.png';
 
 const DoctorProfile = () => {
   const doctorData = {
@@ -34,10 +35,11 @@ const DoctorProfile = () => {
       {/* Top Profile Header */}
       <section className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-10 items-center">
+          <img src={Parvindar_photo} alt="Dr. Parvinder Singh Arora" className="w-64 h-80 rounded-lg shadow-inner object-cover border" />
           {/* Profile Image Placeholder */}
-          <div className="w-64 h-80 bg-slate-200 rounded-lg shadow-inner flex items-center justify-center overflow-hidden border">
+          {/* <div className="w-64 h-80 bg-slate-200 rounded-lg shadow-inner flex items-center justify-center overflow-hidden border">
              <span className="text-slate-400 font-bold">Photo</span>
-          </div>
+          </div> */}
 
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl font-extrabold text-blue-900">{doctorData.name}</h1>
