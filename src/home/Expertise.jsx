@@ -38,21 +38,21 @@ const Expertise = () => {
             title: "Infertility Care", 
             desc: "Specialized maternal and infertility counseling focusing on complete reproductive health and family planning.", 
             icon: <Baby size={28} />, 
-            link: "/treatments", 
+            link: "/treatments/infertility", 
             color: "group-hover:bg-purple-600"
         },
         { 
             title: "IVF Specialist", 
             desc: "Advanced IVF procedures and infertility treatments provided with compassionate care and high success rates.", 
             icon: <Microscope size={28} />, 
-            link: "/treatments",
+            link: "/treatments/ivf",
             color: "group-hover:bg-pink-600"
         },
         { 
             title: "Hip Replacement", 
             desc: "Specialized management of hip fractures and total hip replacements to restore freedom of movement.", 
             icon: <Accessibility size={28} />, 
-            link: "/treatments",
+            link: "/treatments/hip-replacement",
             color: "group-hover:bg-orange-600"
         }
     ];

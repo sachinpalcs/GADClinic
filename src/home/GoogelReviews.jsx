@@ -28,14 +28,12 @@ const GoogleReviews = () => {
         <h2 className="text-3xl md:text-5xl font-black text-blue-900 uppercase tracking-tighter">
           Real <span className="text-red-600">Patient</span> Stories
         </h2>
-        <p className="text-gray-500 mt-2 font-medium italic">Hover to pause the scroll</p>
+        {/* <p className="text-gray-500 mt-2 font-medium italic">Hover to pause the scroll</p> */}
       </div>
 
       <div 
         className="relative flex cursor-pointer"
-        // On mouse enter, stop exactly where it is
         onMouseEnter={() => controls.stop()}
-        // On mouse leave, resume the animation
         onMouseLeave={() => startAnimation()}
       >
         <motion.div
@@ -45,7 +43,7 @@ const GoogleReviews = () => {
           {[...staticReviews, ...staticReviews].map((review, index) => (
             <div 
               key={index} 
-              className="flex-shrink-0 w-[350px] md:w-[400px] bg-white p-8 rounded-[2rem] mx-4 shadow-sm border border-slate-100 transition-all duration-300 hover:border-red-400 hover:scale-[1.02]"
+              className="shrink-0 w-87.5 md:w-100 bg-white p-8 rounded-4xl mx-4 shadow-sm border border-slate-100 transition-all duration-300 hover:border-red-400 hover:scale-[1.02]"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-black text-lg">

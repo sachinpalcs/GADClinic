@@ -11,10 +11,11 @@ const Footer = () => {
 
   const treatments = [
     { name: "Knee Replacement", path: "/treatments/knee-replacement" },
-    { name: "Join Pain", path: "/treatments/joint-pain" },
-    { name: "Fracture", path: "/treatments/fracture" },
-    { name: "Infertility Treatment", path: "/treatments/infertility" },
-    { name: "Complex Trauma", path: "/treatments/trauma" },
+    { name: "Fracture Management", path: "/treatments/fracture" },
+    { name: "Join Pain Relief", path: "/treatments/joint-pain" },
+    { name: "Infertility Care", path: "/treatments/infertility" },
+    { name: "IVF Specialist", path: "/treatments/ivf" },
+    { name: "Hip Replacement", path: "/treatments/hip-replacement" },
   ];
 
   const quickLinks = [
@@ -112,14 +113,15 @@ const Footer = () => {
           <div className="flex items-center gap-1 bg-slate-900/50 px-3 py-1 rounded-full border border-slate-800">
             <span>🚀</span>
             <span className="ml-1">Developed by</span>
-            <a 
+            {/* <a 
               href="https://alomonx.com/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-blue-400 hover:text-blue-300 font-bold transition-colors ml-1"
             >
               Alomonx
-            </a>
+            </a> */}
+            <p className="text-blue-400 hover:text-blue-300 font-bold transition-colors ml-1">Alomonx</p>
           </div>
 
 

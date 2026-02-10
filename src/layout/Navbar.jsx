@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Phone, MapPin, Mail, Menu, X, ChevronDown } from 'lucide-react'; 
+import { Phone, MapPin, Mail, Menu, X, ChevronDown } from 'lucide-react';
 import logo from '../assets/logo.jpeg';
 
 const Navbar = () => {
@@ -29,23 +29,24 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Doctor Profile', path: '/doctor_profiles' },
+    { name: 'Doctor Profile', path: '/doctor-profiles' },
     { 
       name: 'Treatments', 
       path: '#',
       dropdown: [
-        { name: 'Knee Replacement', path: '/treatments/knee-replacement' },
-        { name: 'Fracture', path: '/treatments/fracture' },
-        { name: 'Joint Pain', path: '/treatments/joint-pain' },
-        { name: 'Infertility Treatment', path: '/treatments/infertility' },
-        { name: 'Complex Trauma', path: '/treatments/trauma' },
+        { name: "Knee Replacement", path: "/treatments/knee-replacement" },
+        { name: "Fracture Management", path: "/treatments/fracture" },
+        { name: "Join Pain Relief", path: "/treatments/joint-pain" },
+        { name: "Infertility Care", path: "/treatments/infertility" },
+        { name: "IVF Specialist", path: "/treatments/ivf" },
+        { name: "Hip Replacement", path: "/treatments/hip-replacement" },
       ]
     },
     { name: 'Contact Us', path: '/contact' },
   ];
 
   return (
-    <header className={`w-full bg-white fixed top-0 z-[100] shadow-sm transition-transform duration-300 ${
+    <header className={`w-full bg-white fixed top-0 z-100 shadow-sm transition-transform duration-300 ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}>
       
