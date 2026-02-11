@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Award, BookOpen, Briefcase, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Maam_phot from '../assets/Maam_photo.png';
+import Maam_photo from '../assets/Maam_photo.jpeg';
 
 const Simrandeep = () => {
   const doctorData = {
@@ -45,7 +45,7 @@ const Simrandeep = () => {
       {/* Top Profile Header */}
       <section className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-10 items-center">
-          <img src={Maam_phot} alt={doctorData.name} className="w-64 h-80 rounded-lg shadow-inner object-cover border" />
+          <img src={Maam_photo} alt={doctorData.name} className="w-64 h-80 rounded-lg shadow-inner object-cover border" />
 
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl font-extrabold text-blue-900">{doctorData.name}</h1>

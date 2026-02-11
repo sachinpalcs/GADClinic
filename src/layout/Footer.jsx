@@ -121,7 +121,7 @@ const Footer = () => {
             >
               Alomonx
             </a> */}
-            <p className="text-blue-400 hover:text-blue-300 font-bold transition-colors ml-1">Alomonx</p>
+            <p className="text-blue-400 hover:text-blue-300 font-bold transition-colors ml-1">Alomonx Technology Pvt Ltd</p>
           </div>
 
 

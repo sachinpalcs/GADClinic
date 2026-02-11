@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Award, Stethoscope, Baby, ArrowRight } from 'lucide-react';
 import Parvindar_photo from '../assets/Parvindar_photo.png';
-import Maam_photo from '../assets/Maam_photo.png';
+import Maam_photo from '../assets/Maam_photo.jpeg';
 
 const DoctorProfile = () => {
   const doctors = [
