@@ -13,6 +13,8 @@ import Simrandeep from "./doctor/Simrandeep"
 import IVF from "./treatment/IVF"
 import HipReplcament from "./treatment/HipReplcament"
 import Infertility from "./treatment/Infertility"
+import PrivacyPolicy from "./conditon/PrivacyPolicy"
+import TermsOfService from "./conditon/TermsOfService"
 
 
 const router = createBrowserRouter(
@@ -34,6 +36,9 @@ const router = createBrowserRouter(
       <Route path="/book-appointment" element={<BookAppointment />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
+
+      <Route path="privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="terms-of-service" element={<TermsOfService />} />
       <Route path="*" element={<div className="pt-32 md:pt-40 pb-20 text-center text-3xl font-bold">404 - Page Not Found</div>} />
       </Route>
 
