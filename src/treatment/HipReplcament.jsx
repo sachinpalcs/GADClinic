@@ -1,6 +1,6 @@
 const HipReplcament = () => {
   return (
-    <div className="bg-white min-h-screen pt-32">
+    <div className="bg-white min-h-screen pt-32 md:pt-49 pb-20">
       <section className="bg-blue-600 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-black mb-6">Hip Replacement Surgery</h1>

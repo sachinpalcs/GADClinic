@@ -10,7 +10,7 @@ const Infertility = () => {
   ];
 
   return (
-    <div className="bg-white min-h-screen pt-32">
+    <div className="bg-white min-h-screen pt-32 md:pt-50 pb-20">
       {/* Hero Header */}
       <section className="bg-blue-900 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">

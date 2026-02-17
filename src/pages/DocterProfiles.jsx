@@ -33,7 +33,7 @@ const DoctorProfile = () => {
 //  pt-32 md:pt-40
 
   return (
-    <div className="bg-slate-50 min-h-screen pt-32 md:pt-45 pb-20 px-4">
+    <div className="bg-slate-50 min-h-screen pt-32 md:pt-60 pb-20 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">

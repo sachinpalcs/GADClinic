@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ShieldCheck, ClipboardList } from 'lucide-react';
 const IVF = () => {
   return (
-    <div className="bg-white min-h-screen pt-32">
+    <div className="bg-white min-h-screen pt-32 md:pt-49 pb-20">
       <section className="bg-slate-950 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-black mb-6">Advanced IVF Solutions</h1>

@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import Parvindar_photo from '../assets/Parvindar_photo.png';
 import Maam_photo from '../assets/Maam_photo.jpeg';
 import { Phone, Mail, MapPin, Award } from 'lucide-react';
-// import logo from '../assets/logo.jpeg';
 
 
 

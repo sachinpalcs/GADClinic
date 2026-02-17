@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Phone, MapPin, Mail, Menu, X, ChevronDown } from 'lucide-react';
-import logo from '../assets/logo.jpeg';
+import gadlogo from '../assets/gadlogo.png';
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   
-  // --- MOBILE STATES ---
+  // MOBILE STATES
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileTreatmentsOpen, setMobileTreatmentsOpen] = useState(false);
 
@@ -53,7 +53,11 @@ const Navbar = () => {
       {/* Upper Section */}
       <div className="max-w-7xl mx-auto px-4 py-4 flex flex-row justify-between items-center gap-4">
         <Link to="/" className="flex items-center gap-4 group">
-          <img src={logo} alt="Logo" className="h-12 md:h-20 w-auto object-contain" />
+          <img
+            src={gadlogo}
+            alt="Logo"
+            className="h-20 md:h-28 w-auto object-contain mix-blend-multiply filter drop-shadow-md transition-transform duration-300 group-hover:scale-105"
+          />
           <div className="flex flex-col">
             <h1 className="text-sm md:text-2xl font-black text-blue-900 leading-none tracking-tight">
               GAD ADVANCED ORTHO GYNAE &
@@ -63,6 +67,8 @@ const Navbar = () => {
             </h2>
           </div>
         </Link>
+
+        
 
         {/* Desktop Contacts */}
         <div className="hidden lg:flex items-center gap-8">
@@ -76,6 +82,8 @@ const Navbar = () => {
           </a>
         </div>
 
+        
+
         {/* MOBILE TOGGLE BUTTON */}
         <button 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -84,6 +92,9 @@ const Navbar = () => {
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
+
+
+      
 
       {/* DESKTOP LOWER SECTION (Hidden on Mobile) */}
       <div className="hidden lg:block bg-blue-900">
@@ -96,7 +107,17 @@ const Navbar = () => {
                 onMouseEnter={() => link.dropdown && setIsDropdownOpen(true)}
                 onMouseLeave={() => link.dropdown && setIsDropdownOpen(false)}
               >
-                <NavLink to={link.path} className={({ isActive }) => `text-sm font-bold uppercase py-4 ${isActive ? 'text-white border-b-2' : 'text-blue-100 hover:text-white'}`}>
+                <NavLink 
+                  to={link.path} 
+                  className={({ isActive }) => {
+                    const baseClasses = "text-sm font-bold uppercase py-4 transition-colors";
+                    const activeClasses = (isActive && link.name !== 'Treatments') 
+                      ? 'text-white border-b-2 border-white' 
+                      : (isActive ? 'text-white' : 'text-blue-100 hover:text-white');
+
+                    return `${baseClasses} ${activeClasses}`;
+                  }}
+                >
                   {link.name}
                 </NavLink>
                 {link.dropdown && isDropdownOpen && (

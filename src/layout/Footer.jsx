@@ -4,7 +4,7 @@ import {
   Phone, Mail, MapPin, Facebook, 
   Instagram, Twitter, Linkedin, ChevronRight 
 } from 'lucide-react';
-import logo from '../assets/logo.jpeg';
+import gadlogo from '../assets/gadlogo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,10 +32,22 @@ const Footer = () => {
         
         {/* Column 1: About & Social */}
         <div className="space-y-6">
-          <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Logo" className="h-12 w-auto rounded bg-white p-1" />
+
+          {/* <Link to="/" className="flex items-center gap-3">
+            <img src={gadlogo} alt="GadLogo" className="h-12 w-auto rounded bg-white p-1" />
             <span className="text-white font-black text-xl tracking-tighter">GADCLINIC</span>
-          </Link>
+          </Link> */}
+
+        <Link to="/" className="flex items-center gap-4">
+  <img 
+    src={gadlogo} 
+    alt="GadLogo" 
+    className="h-20 w-auto object-contain scale-125" 
+  />
+  <span className="text-white font-black text-3xl tracking-tighter uppercase">
+    GADCLINIC
+  </span>
+</Link>
           <p className="text-sm leading-relaxed">
             Leading Orthopaedic, Gynaecology, and Infertility center in Delhi. 
             Dedicated to providing advanced surgical care and compassionate treatment.

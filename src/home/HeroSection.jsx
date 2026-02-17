@@ -41,7 +41,7 @@ const HeroSection = () => {
       return () => clearInterval(timer);
     }
   }, [page, isHovered]); // Re-run when page changes or hover state changes
-  // -----------------------
+
 
   return (
     <div 

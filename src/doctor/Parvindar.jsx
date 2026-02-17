@@ -32,7 +32,7 @@ const Parvindar = () => {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen pt-32 md:pt-40">
+    <div className="bg-slate-50 min-h-screen pt-32 md:pt-45">
       {/* Top Profile Header */}
       <section className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-10 items-center">

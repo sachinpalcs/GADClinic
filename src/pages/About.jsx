@@ -13,7 +13,7 @@ const About = () => {
 
   //  pt-32 md:pt-40
   return (
-    <div className="min-h-screen bg-white pt-32 md:pt-50 pb-20 overflow-hidden">
+    <div className="min-h-screen bg-white pt-32 md:pt-60 pb-20 overflow-hidden">
       {/* 1. Vision & Mission Section */}
       <section className="max-w-7xl mx-auto px-6 mb-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
