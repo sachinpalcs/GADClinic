@@ -123,7 +123,7 @@ const Footer = () => {
           <p>© {currentYear} GAD Advanced Clinics. All Rights Reserved.</p>
           {/* Add developed by Alomonox  */}
           <div className="flex items-center gap-1 bg-slate-900/50 px-3 py-1 rounded-full border border-slate-800">
-            <span>🚀</span>
+            {/* <span>🚀</span> */}
             <span className="ml-1">Developed by</span>
             {/* <a 
               href="https://alomonx.com/" 
